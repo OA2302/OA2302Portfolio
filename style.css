@@ -115,7 +115,9 @@ button {
         width: 90%;
         padding: 15px;
     }
-    
+    button {
+        width: 350px;
+    }
     .options {
         justify-content: center;
         display: grid;
