@@ -118,7 +118,8 @@ button {
         padding: 15px;
     }
     button {
-        width: 350px;
+        width: 340px;
+        margin-right: 10px;
     }
     .options {
         justify-content: center;
