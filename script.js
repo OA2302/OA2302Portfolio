@@ -175,10 +175,16 @@ const questions = [
             correctAnswer: 'Photosynthesis'
         },
         {
+            question: "What is the largest ocean on Earth?",
+            options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+            correctAnswer: "Pacific Ocean"
+        },
+        {
             question: 'Who wrote the play "Romeo and Juliet"?',
             options: ['William Shakespeare', 'Charles Dickens', 'Mark Twain', 'Jane Austen'],
             correctAnswer: 'William Shakespeare'
         }
+
 
 // ... (previous code)
 

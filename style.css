@@ -47,7 +47,7 @@ body {
     71% { color: indigo; }
     85% { color: violet; }
 }
-a {
+h1 a {
     text-decoration: none;
     animation: rainbowFlash2 1.6s linear infinite;
 }
