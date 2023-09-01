@@ -3,6 +3,7 @@ const options = document.querySelectorAll('.option');
 const resultElement = document.getElementById('result');
 const progressBar = document.getElementById('progress-bar');
 
+
 const questions = [
     {
         question: "Who wrote the play 'Romeo and Juliet'?",
@@ -166,6 +167,7 @@ function showQuestion(question) {
     });
 }
 
+
 function checkAnswer(selectedOption) {
     const selectedAnswer = selectedOption.textContent;
     const correctAnswer = questions[currentQuestionIndex].correctAnswer;
@@ -192,6 +194,11 @@ function checkAnswer(selectedOption) {
 
     updateProgressBar();
 }
+
+        
+            
+            
+
 
 function showResult(correctCount) {
     const percentage = (correctCount / questions.length) * 100;

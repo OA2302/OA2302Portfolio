@@ -158,6 +158,8 @@ function checkAnswer(selectedOption) {
     updateProgressBar();
 }
 
+
+
 function showResult(correctCount) {
     const percentage = (correctCount / questions.length) * 100;
     resultElement.textContent = `Congratulations You scored ${percentage.toFixed(2)}%`;

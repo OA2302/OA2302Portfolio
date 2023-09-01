@@ -12,7 +12,12 @@
         <a href="index.html" onclick="goBack()" style="color: #000012; text-decoration: none;padding-left: 5px;padding-top: 7px;">
             <i class="fas fa-arrow-left"></i> Return
         </a>
-        <h1><a href="GK.html">General Knowledge Test</a></h1>
+        <h1><a href="english.html">General Knowledge Quiz</a></h1>
+
+        <!-- Question number indicator -->
+       
+
+        <!-- Quiz content -->
         <p id="question">Question goes here.</p>
         <div class="options">
             <button class="option" onclick="checkAnswer(this)"></button>
@@ -20,9 +25,49 @@
             <button class="option" onclick="checkAnswer(this)"></button>
             <button class="option" onclick="checkAnswer(this)"></button>
         </div>
-        <p id="result"></p>
+
+        <p id="result" class="result"></p>
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
     </div>
     <footer><small>okikiadenekan • © 2023</small></footer>
     <script src="script.js"></script>
+    <script>
+        const questionElement = document.getElementById('question');
+        const options = document.querySelectorAll('.option');
+        const resultElement = document.getElementById('result');
+        const progressBar = document.getElementById('progress-bar');
+
+        // Your questions array and other variables...
+
+        let currentQuestionIndex = 0;
+        let correctAnswers = 0;
+
+        function showQuestion(question) {
+            questionElement.textContent = question.question;
+            options.forEach((option, index) => {
+                option.textContent = question.options[index];
+            });
+        }
+
+        // Your checkAnswer, showResult, updateProgressBar functions...
+
+        // Function to update the question number indicator
+        function updateQuestionNumber() {
+            const numQuestions = questions.length; // Assuming questions is an array of all questions
+            document.getElementById("questionNumber").textContent = `Question ${currentQuestionIndex + 1} of ${numQuestions}:`;
+        }
+
+        // Simulate moving to the next question
+        function moveToNextQuestion() {
+            currentQuestionIndex++;
+            updateQuestionNumber();
+        }
+
+        // Simulate the initial question load
+        updateQuestionNumber();
+        showQuestion(questions[currentQuestionIndex]);
+    </script>
 </body>
 </html>
