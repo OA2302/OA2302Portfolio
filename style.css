@@ -110,6 +110,8 @@ button {
     body {
         min-width: 375px;
         overflow: hidden;
+        height: 100%;
+        position: fixed;
     }
     .quiz-container {
         width: 90%;
