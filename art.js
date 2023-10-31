@@ -186,8 +186,8 @@ function shuffleArray(array) {
 }
 
 // Shuffle the questions array
-shuffleArray(questions);
 
+shuffleArray(questions);
 // ... (remaining code)
     
 
