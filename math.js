@@ -110,8 +110,8 @@ const questions = [
                 options: ["$40", "$80", "$110", "$120"],
                 correctAnswer: "$120"
             },
- 
-    
+             
+            
 ];
 // Shuffle function to randomize the order of elements in an array
 function shuffleArray(array) {

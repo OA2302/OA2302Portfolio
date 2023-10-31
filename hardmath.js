@@ -4,7 +4,7 @@ const resultElement = document.getElementById('result');
 const progressBar = document.getElementById('progress-bar');
 
 
-const hardMathQuestions = [
+const questions = [
     {
         question: "Solve the differential equation: dy/dx = 2x - 1",
         options: ["y = x^2 - x + C", "y = x^2 + x + C", "y = x^2 - x + 2C", "y = x^2 + x + 2C"],
